@@ -1,0 +1,25 @@
+.banner--dark-version > .info-card {
+    max-width: 640px;
+    box-shadow: 0px 20px 20px 0px #000000CC;
+    border-radius: 8px;
+}
+
+.banner--dark-version .info-card__img {
+    border-radius: 8px 8px 0 0;
+}
+
+.banner--dark-version .info-card__wrapper-text {
+    padding: 40px 40px 62px;
+    background: #242424;
+    border-radius: 0 0 8px 8px;
+}
+
+.banner--dark-version .info-card__banner-note {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner--dark-version .info-card__text {
+    color: #FFFFFF80;
+    margin: 0 0 40px 0;
+}

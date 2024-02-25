@@ -1,0 +1,25 @@
+.banner--light-version > .info-card {
+    max-width: 480px;
+    box-shadow: 0px 10px 20px 0px #DFDFDF99;
+    border-radius: 28px;
+}
+
+.banner--light-version .info-card__img {
+    border-radius: 28px 28px 0 0;
+}
+
+.banner--light-version .info-card__wrapper-text {
+    padding: 30px 40px;
+    background: linear-gradient(133.45deg, #FFFFFF 12.78%, #DFBDBD 97.22%);
+    border-radius: 0 0 28px 28px;
+}
+
+.banner--light-version .info-card__banner-note {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.banner--light-version .info-card__text {
+    color: #24242480;
+    margin: 0 0 30px 0;
+}

@@ -1,0 +1,127 @@
+@import url('hidden.css');
+@import url('light-verison.css');
+@import url('dark-version.css');
+
+body {
+    font-family: "Tenor Sans", "Arial", sans-serif;
+}
+
+.arrow-filter {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(17deg) brightness(104%) contrast(102%);
+    cursor: pointer;
+}
+
+.arrow-filter:hover {
+    filter: invert(71%) sepia(63%) saturate(3363%) hue-rotate(360deg) brightness(103%) contrast(106%);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background: #d6d2d0 url("https://i.ibb.co/hMf0P92/2024-02-25-165146883.png") no-repeat;
+    background-size: 100% 100%;
+    height: 770px;
+    color: #ffffff;
+    padding: 0 120px;
+}
+
+/* фиксированная высота для соот. макета по размерности */
+.banner--light-version, .banner--dark-version {
+    justify-content: center;
+    background: #0000001A url('https://i.ibb.co/tzsR84z/image.png') no-repeat;
+    background-size: cover;
+    height: 770px;
+    padding: 0;
+    color: #242424;
+}
+
+.banner--dark-version {
+    justify-content: end;
+    padding-right: 120px;
+    color: #ffffff;
+}
+
+/* <--- 1 карточка ---> */
+
+.info-card {
+    background-color: rgba(174, 159, 103, 0.9);
+    padding: 40px 30px;
+    max-width: 420px;
+}
+
+.info-card__img-wrapper {
+    display: none;
+}
+
+.info-card__title {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 44px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.info-card__banner-note {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.info-card__text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 0 40px;
+}
+
+.info-card__link {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 60px;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 31px 10px 32px;
+    text-align: center;
+    max-width: 150px;
+    overflow-wrap: break-word;
+}
+
+/* <--- повторения в двух файлах светлой и темной версии ---> */
+
+.banner--dark-version > .info-card, .banner--light-version > .info-card {
+    background: inherit;
+    padding: 0;
+}
+
+.banner--light-version .info-card__img-wrapper, .banner--dark-version .info-card__img-wrapper {
+    display: block;
+}
+
+.banner--light-version .info-card__wrapper-text, .banner--dark-version .info-card__wrapper-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner--dark-version .info-card__title, .banner--light-version .info-card__title {
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.banner--dark-version .info-card__text, .banner--light-version .info-card__text {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.banner--light-version .info-card__link, .banner--dark-version .info-card__link {
+    max-width: 220px;
+    background: #C21717;
+    padding: 18px 67px 18px 68px;
+    color: #fff;
+    border: none;
+}
